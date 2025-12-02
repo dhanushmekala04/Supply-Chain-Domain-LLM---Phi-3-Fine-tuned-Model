@@ -387,7 +387,7 @@ for record in results:
 
 bot.close()
 ```
-
+```
 project-root/
 │
 ├── conversion/                     # Model conversion utilities
@@ -411,7 +411,7 @@ project-root/
 │
 ├── main.py                         # Local inference script (generating text / Cypher)
 └── read.md                         # Main documentation (this file)
-
+```
 
 ---
 
