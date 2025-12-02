@@ -388,27 +388,30 @@ for record in results:
 bot.close()
 ```
 
-
----
 project-root/
-├── conversion/                # Model conversion utilities
-│   ├── convert-to-gguf.ipynb  # Notebook for converting models to GGUF format
-│   └── coversion-read.md      # Documentation for conversion steps
-├── myenv/                     # Python virtual environment
-├── Ollama/                    # Ollama runtime setup
-│   ├── desktop.ini
-│   ├── inference.png          # Screenshot of inference run
-│   ├── Modelfile              # Ollama configuration file
-│   ├── ollama                 # Ollama executable
-│   ├── ollama-read.md         # Ollama setup and usage guide
-│   └── phi3_gguf_q8_0.gguf    # Converted model weights (~4GB)
-├── training/                  # Training workflows
-│   ├── data/                  # Training dataset
-│   ├── phi3_qlora/            # QLoRA training artifacts
-│   ├── train_phi3_qlora.ipynb # Notebook for fine-tuning Phi-3 with QLoRA
-│   └── training-read.md       # Documentation for training process
-├── main.py                    # Local inference script
-└── read.md                    # Main documentation (this file)
+│
+├── conversion/                     # Model conversion utilities
+│   ├── convert-to-gguf.ipynb       # Convert Fine-tuned Phi-3 model to GGUF format
+│   └── conversion-read.md          # Documentation for conversion steps
+│
+├── myenv/                          # Local Python virtual environment (ignore in repo)
+│
+├── Ollama/                         # Ollama runtime setup & deployment files
+│   ├── inference.png               # Screenshot of inference example
+│   ├── Modelfile                   # Ollama model configuration
+│   ├── ollama                      # Ollama executable (local only; not pushed)
+│   ├── ollama-read.md              # Setup & usage instructions for Ollama
+│   └── phi3_gguf_q8_0.gguf         # Converted GGUF model weights (~4GB)
+│
+├── training/                       # Training & fine-tuning workflow
+│   ├── data/                       # Training dataset
+│   ├── phi3_qlora/                 # QLoRA training outputs & checkpoints
+│   ├── train_phi3_qlora.ipynb      # Notebook for QLoRA fine-tuning of Phi-3
+│   └── training-read.md            # Documentation of training process
+│
+├── main.py                         # Local inference script (generating text / Cypher)
+└── read.md                         # Main documentation (this file)
+
 
 ---
 
