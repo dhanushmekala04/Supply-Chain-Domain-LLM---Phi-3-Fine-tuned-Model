@@ -1,0 +1,11 @@
+FROM ./phi3_gguf_q8_0.gguf
+
+SYSTEM "<|system|>You are a helpful AI assistant trained on supply chain query generation.<|end|>"
+
+TEMPLATE """<|user|>
+{{ .Prompt }}<|end|>
+<|assistant|>"""
+
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+
