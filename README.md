@@ -1,4 +1,4 @@
-# Supply-Chain-Domain-LLM---Phi-3-Fine-tuned-Model
+
 # Supply Chain Domain LLM - Phi-3 Fine-tuned Model
 
 A specialized language model fine-tuned on supply chain graph data for generating Neo4j Cypher queries from natural language.
