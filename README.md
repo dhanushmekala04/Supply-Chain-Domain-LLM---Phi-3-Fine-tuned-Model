@@ -390,26 +390,25 @@ bot.close()
 
 
 ---
-Project Structure
 project-root/
-├── conversion/
-│   ├── convert-to-gguf.ipynb      # Model conversion notebook
-│   └── coversion-read.md          # Conversion documentation
-├── myenv/                          # Python virtual environment
-├── Ollama/
+├── conversion/                # Model conversion utilities
+│   ├── convert-to-gguf.ipynb  # Notebook for converting models to GGUF format
+│   └── coversion-read.md      # Documentation for conversion steps
+├── myenv/                     # Python virtual environment
+├── Ollama/                    # Ollama runtime setup
 │   ├── desktop.ini
-│   ├── inference.png              # Model inference screenshot
-│   ├── Modelfile                  # Ollama configuration
-│   ├── ollama                     # Ollama executable
-│   ├── ollama-read.md            # Ollama setup guide
-│   └── phi3_gguf_q8_0.gguf       # Model weights (~4GB)
-├── training/
-│   ├── data/                      # Training dataset
-│   ├── phi3_qlora/               # QLoRA training artifacts
-│   ├── train_phi3_qlora.ipynb    # Training notebook
-│   └── training-read.md          # Training documentation
-├── main.py       # Local inference script
-└── read.md                        # Main documentation
+│   ├── inference.png          # Screenshot of inference run
+│   ├── Modelfile              # Ollama configuration file
+│   ├── ollama                 # Ollama executable
+│   ├── ollama-read.md         # Ollama setup and usage guide
+│   └── phi3_gguf_q8_0.gguf    # Converted model weights (~4GB)
+├── training/                  # Training workflows
+│   ├── data/                  # Training dataset
+│   ├── phi3_qlora/            # QLoRA training artifacts
+│   ├── train_phi3_qlora.ipynb # Notebook for fine-tuning Phi-3 with QLoRA
+│   └── training-read.md       # Documentation for training process
+├── main.py                    # Local inference script
+└── read.md                    # Main documentation (this file)
 
 ---
 
